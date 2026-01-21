@@ -1,5 +1,5 @@
 import { House, Person, BoxArrowInRight, Pencil } from 'react-bootstrap-icons';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Profile from './pages/logged-in/profile.tsx';
 import Home from './pages/home.tsx';
 import Blog from './pages/blog.tsx';
@@ -57,18 +57,19 @@ const App: React.FC = () => {
           </>
         )}
       </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/blogeditor" element={<Blog_Editor />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/myblogs" element={<My_Blogs />} />
-        <Route path="/logout" element={<Logout />} />
-        <Route path="/authLogin" element={<AuthLogin />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Blog" element={<Blog />} />
+          <Route path="/blogeditor" element={<Blog_Editor />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/myblogs" element={<My_Blogs />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/authLogin" element={<AuthLogin />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
