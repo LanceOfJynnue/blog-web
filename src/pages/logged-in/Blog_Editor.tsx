@@ -1,4 +1,4 @@
-import '../../style.css'
+import '../../style.css';
 import { useEffect, useState } from 'react';
 import { supabase } from '../../supabaseClient';
 
