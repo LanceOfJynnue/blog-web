@@ -2,7 +2,7 @@
   "name": "blog-web",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://LanceOfJynnue.github.io/blog-web",
+  "homepage": "https://LanceOfJynnue.github.io/blog-web/",
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
