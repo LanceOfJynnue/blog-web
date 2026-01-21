@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "start": "tsc -b && vite start",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && cp ./dist/index.html ./dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
