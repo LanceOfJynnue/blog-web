@@ -7,7 +7,7 @@ import Login from './pages/logged-out/Login.tsx';
 import Register from './pages/logged-out/Register.tsx';
 import My_Blogs from './pages/logged-in/My_Blogs.tsx';
 import Logout from './pages/logged-in/logout.tsx';
-import AuthLogin from './pages/logged-out/authenticate.tsx/AuthLogin.tsx';
+import AuthLogin from './pages/logged-out/authenticate/AuthLogin.tsx';
 import Blog_Editor from './pages/logged-in/Blog_Editor.tsx';
 import './style.css';
 
