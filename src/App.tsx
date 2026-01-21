@@ -1,14 +1,14 @@
 import { House, Person, BoxArrowInRight, Pencil } from 'react-bootstrap-icons';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import Profile from './pages/logged-in/Profile.tsx';
-import Home from './pages/Home.tsx';
-import Blog from './pages/Blog.tsx';
-import Login from './pages/logged-out/Login.tsx';
-import Register from './pages/logged-out/Register.tsx';
-import My_Blogs from './pages/logged-in/My_Blogs.tsx';
+import Profile from './pages/logged-in/profile.tsx';
+import Home from './pages/home.tsx';
+import Blog from './pages/blog.tsx';
+import Login from './pages/logged-out/login.tsx';
+import Register from './pages/logged-out/register.tsx';
+import My_Blogs from './pages/logged-in/my_blogs.tsx';
 import Logout from './pages/logged-in/logout.tsx';
-import AuthLogin from './pages/logged-out/authenticate/AuthLogin.tsx';
-import Blog_Editor from './pages/logged-in/Blog_Editor.tsx';
+import AuthLogin from './pages/logged-out/authenticate/authlogin.tsx';
+import Blog_Editor from './pages/logged-in/blog_editor.tsx';
 import './style.css';
 
 const user_id_str: string | null = sessionStorage.getItem('currentUserId');
